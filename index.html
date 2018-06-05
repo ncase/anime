@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>I AM BECOME ANIME</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+				background-color: #f0f0f0;
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 20px;
+			}
+			#canvas{
+				background: #333;
+				display: block;
+				margin: 40px auto 5px auto;
+			}
+			#videoel, #tmpCanvas, #music {
+				display: none;
+			}
+			#weeb{
+				text-align: center;
+				margin-bottom: 42px;
+				line-height: 0.5em;
+				letter-spacing: 1px;
+				display: none;
+			}
+			#weebometer{
+				position: relative;
+				top:1.5em;
+				transform: scale(2);
+			}
+			#credits{
+				font-weight: 100;
+				text-align: center;
+			    font-size: 13px;
+			    letter-spacing: 0.5px;
+			}
+			#loading{
+				position: absolute;
+			    top: 200px;
+			    text-align: center;
+			    width: 100%;
+			    color: #fff;
+			    font-size: 20px;
+			    font-weight: 100;
+			}
+			#merge_level{
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<canvas id="canvas" width="600" height="450"></canvas>
+		<div id="loading">
+			<span style='font-size:40px'>loading the anime...</span>
+			<br><br>
+			(click "allow" to let this page use your webcam!
+			<br>it's totally worth it, i promise)
+		</div>
+
+		<video id="videoel" width="600" height="450" preload="auto" loop playsinline autoplay></video>
+		<canvas id="tmpCanvas" width="600" height="450"></canvas>
+		<audio id="music" loop>
+			<source src="FULL_WEEB_MODE.mp3" type="audio/mpeg">
+		</audio>
+
+		<br>
+		<div id="weeb">
+			<div id="merge_level"></div>
+			<input id="weebometer" type="range" min="1" max="6" value="0"></input>
+		</div>
+
+		<div id="credits">
+			made by <a href="http://ncase.me">nicky case</a> for
+			<a href="https://bostonstupidhackathon.com/">the stupid sh*t no one needs 2018 hackathon</a>
+			<br>
+			face-tracking done with <a href="https://github.com/auduno/clmtrackr">clmtrackr.js</a>
+			 ・ 
+			soundtrack is <a href="https://www.youtube.com/watch?v=jHKysIMdiG0">the Yuru Yuri opening theme song</a>
+			<br>
+			special thanks to cassandra mcclure for being a total weeb
+		</div>
+		
+	</body>
+</html>
+
+<script src="clmtrackr.js"></script>
+<script src="weeb.js"></script>
