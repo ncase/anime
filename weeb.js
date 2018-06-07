@@ -169,7 +169,7 @@ function drawLoop() {
 	}
 	var label;
 	if(weebValue==1){
-		label = "drag slider to become anime &darr;";
+		label = "drag slider SLOWLY... to become anime! &darr;";
 	}else{
 		label = "ANIME LEVEL: "+level+"%";
 	}
